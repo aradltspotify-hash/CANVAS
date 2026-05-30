@@ -136,3 +136,7 @@ const httpServer = createServer(async (req, res) => {
     return;
   }
   if (req.url === "/mcp") {
+httpServer.listen(PORT, "0.0.0.0", () => {
+  console.log(`✅  Canvas MCP server en puerto ${PORT}`);
+  console.log(`    Canvas domain: ${CANVAS_DOMAIN}`);
+});
