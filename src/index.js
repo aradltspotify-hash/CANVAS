@@ -355,7 +355,7 @@ const httpServer = createServer(async (req, res) => {
   res.end("Not found");
 });
 
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT, '0.0.0.0', () => {
   console.log(`✅  Canvas MCP server escuchando en http://localhost:${PORT}/mcp`);
   console.log(`    Canvas domain: ${CANVAS_DOMAIN}`);
 });
