@@ -335,7 +335,7 @@ server.tool(
 
 // ── HTTP Transport ────────────────────────────────────────────────────────────
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 const httpServer = createServer(async (req, res) => {
   if (req.method === "GET" && req.url === "/health") {
